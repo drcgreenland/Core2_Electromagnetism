@@ -1,0 +1,206 @@
+\usepackage{booktabs}
+%\documentclass[11pt]{book}[pdfborder={0 0 0}]
+\usepackage[a4paper,margin=3cm]{geometry}
+\usepackage[colorlinks]{hyperref}
+\usepackage[svgnames]{xcolor}
+\usepackage{bm,graphicx,enumitem,mathtools}
+%\usepackage{quantum}
+\usepackage{empheq}
+\usepackage{framed,float,pdfcomment,tcolorbox}
+
+%\usepackage{ms}
+
+%\usepackage[utf8]{inputenc}
+
+\usepackage[margin=20pt,font=footnotesize,labelfont=bf,labelsep=endash]{caption}
+
+\usepackage[T1]{fontenc}
+
+%\usepackage{newtxtext,newtxmath}
+
+%\usepackage[cal=boondoxo]{mathalfa}
+
+\usepackage[defaultsans]{lato}
+\usepackage{esint}
+\usepackage{booktabs} 
+
+\usepackage[titles]{tocloft}
+%\renewcommand*{\cftsecdotsep}{4.5}  % use dots in the section entries
+\renewcommand*{\cftsecnumwidth}{2em} % increase space for Roman numerals
+\renewcommand*{\cftsubsubsecindent}{2em} % reduce indent of subsubsection titles 
+\setlength\cftparskip{4pt}
+
+\renewcommand\thesection{\arabic{section}}
+
+\renewcommand\contentsname{\sffamily\Large Table of Contents\medskip\hrule\medskip}
+
+\usepackage[nodayofweek]{datetime}
+
+\makeatletter
+\renewcommand\section{%
+\@startsection{section}{1}{\z@}%
+              {-2ex \@plus -1ex \@minus -.2ex}%
+              {1ex \@plus .2ex}%
+              {\sffamily\bfseries\large\noindent Section~}}
+\renewcommand\subsection{%
+\@startsection{subsection}{2}{\z@}%
+              {-3.25ex\@plus -1ex \@minus -.2ex}%
+              {1ex \@plus .2ex}%
+              {\sffamily\bfseries}}
+\renewcommand\subsubsection{%
+\@startsection{subsubsection}{2}{\z@}%
+              {-3.25ex\@plus -1ex \@minus -.2ex}%
+              {1ex \@plus .2ex}%
+              {\sffamily\bfseries}}
+\renewcommand\paragraph{%
+\@startsection{paragraph}{4}{\z@}%
+              {-1.5ex\@plus -1ex \@minus -.2ex}%
+              {0.3ex \@plus .2ex}%
+              {\sffamily\bfseries}}
+
+\renewcommand\tableofcontents{%
+    \subsection*{\contentsname
+        \@mkboth{%
+           \MakeUppercase\contentsname}{\MakeUppercase\contentsname}}%
+    \@starttoc{toc}%
+}
+\makeatother
+
+
+\makeatletter
+\newenvironment{tablehere}
+{\def\@captype{table}}{}
+\newenvironment{figurehere}
+{\def\@captype{figure}}{}
+\makeatother
+
+
+ \definecolor{shadecolor}{named}{AliceBlue}
+
+\newtcolorbox{mybox}{colback=gray!25,
+boxrule=0pt,arc=0pt,boxsep=2pt,left=2pt,right=2pt,leftrule=2pt, rightrule=2pt}
+
+\newcommand{\Think}[1]{
+\begin{mybox}
+\includegraphics[width=0.8cm]{Images/Think.png} \enskip{}
+ \textbf{Think about it.}\\#1
+\end{mybox}
+}
+
+
+% \newcounter{appliedmechanics}
+%\def\theappliedmechanics{\arabic{appliedmechanics}}
+%\newenvironment{appliedmechanics}[2][]{\begin{small}\begin{shaded}\refstepcounter%{appliedmechanics} \par\medskip\noindent%
+%   \textbf{Applied Mechanics~\theappliedmechanics #1: #2
+%   \vspace{0.1cm} \hrule \vspace{0.1cm}}
+%   \rmfamily}{\medskip \end{shaded}\end{small}}
+   
+ 
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{} % clear all header fields
+\fancyhead[RO,LE]{\thepage}
+\fancyhead[CE,CO]{\small\textsf{Core Physics II: Oscillations, Waves \& Fields}}
+\fancyfoot{} % clear all footer fields
+\fancyfoot[L]{}
+\fancyfoot[CO,CE]{}
+\fancyfoot[R]{\hyperlink{page.1}{\small{\color{SteelBlue}Table of Contents}}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+\setlist[description]{%
+  font={\itshape}, % set the label font
+%  font={\bfseries\sffamily\color{red}}, % if colour is needed
+}
+
+\newcommand{\highlight}[1]{\textsf{\textbf{\small #1}}}
+
+%\newcommand{\mechanics}[1]{{\color{SteelBlue}#1}}
+
+\newcommand{\exref}[2][Exercise~]{#1\ref{#2}}
+\newcommand{\secref}[2][Section~]{#1\ref{#2}}
+\newcommand{\figref}[2][\figurename~]{#1\ref{#2}}
+
+\newlength\mytemplen
+\newsavebox\mytempbox
+
+\makeatletter
+\newcommand\mybluebox{%
+    \@ifnextchar[%]
+       {\@mybluebox}%
+       {\@mybluebox[0pt]}}
+
+\def\@mybluebox[#1]{%
+    \@ifnextchar[%]
+       {\@@mybluebox[#1]}%
+       {\@@mybluebox[#1][0pt]}}
+
+\def\@@mybluebox[#1][#2]#3{
+    \sbox\mytempbox{#3}%
+    \mytemplen\ht\mytempbox
+    \advance\mytemplen #1\relax
+    \ht\mytempbox\mytemplen
+    \mytemplen\dp\mytempbox
+    \advance\mytemplen #2\relax
+    \dp\mytempbox\mytemplen
+    \colorbox{Linen}{\hspace{1em}\usebox{\mytempbox}\hspace{1em}}}
+
+\makeatother
+
+\newcommand{\poor}{\color{Red}poor}
+\newcommand{\ok}{\color{Orange}ok}
+\newcommand{\good}{\color{OliveGreen}good}
+
+% For vectors
+\renewcommand{\a}{\mathbf{a}}
+\renewcommand{\b}{\mathbf{b}}
+\renewcommand{\c}{\mathbf{c}}
+\newcommand{\x}{\mathbf{x}}
+\newcommand{\y}{\mathbf{y}}
+\newcommand{\z}{\mathbf{z}}
+\renewcommand{\r}{\mathbf{r}}
+\renewcommand{\u}{\mathbf{u}}
+\renewcommand{\v}{\mathbf{v}}
+\newcommand{\kk}{\mathbf{k}}
+\newcommand{\p}{\mathbf{p}}
+\newcommand{\m}{\mathbf{m}}
+\newcommand{\s}{\mathbf{s}}
+
+\newcommand{\n}{\mathbf{n}}
+
+% For differentials
+\renewcommand{\d}{\mathrm{d}}
+% For exponentials? 
+\newcommand{\e}{\mathrm{e}}
+
+% For vectors
+\newcommand{\A}{\mathbf{A}}
+\newcommand{\B}{\mathbf{B}}
+\newcommand{\D}{\mathbf{D}}
+\newcommand{\E}{\mathbf{E}}
+\newcommand{\J}{\mathbf{J}}
+\newcommand{\F}{\mathbf{F}}
+\newcommand{\M}{\mathbf{M}}
+\renewcommand{\H}{\mathbf{H}}
+\renewcommand{\P}{\mathbf{P}}
+\newcommand{\R}{\mathbf{R}}
+\renewcommand{\l}{\mathbf{l}}
+\renewcommand{\S}{\mathbf{S}}
+\renewcommand{\L}{\mathbf{L}}
+\newcommand{\Q}{\mathbf{Q}}
+
+
+% For unit vectors
+\renewcommand{\i}{\mathbf{i}}
+\renewcommand{\j}{\mathbf{j}}
+\renewcommand{\k}{\mathbf{k}}
+
+%\DeclareMathOperator{\sinc}{sinc}
+
+%\numberwithin{equation}{section}
+
+%\setcounter{tocdepth}{2}
+
+%\DeclareUnicodeCharacter{2061}{}
+%\DeclareUnicodeCharacter{2003}{}

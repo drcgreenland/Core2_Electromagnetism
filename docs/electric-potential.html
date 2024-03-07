@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 Electric potential | Fields</title>
+  <meta name="description" content="This is the Fields notes for Core Physics II." />
+  <meta name="generator" content="bookdown 0.37 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 2 Electric potential | Fields" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="This is the Fields notes for Core Physics II." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 Electric potential | Fields" />
+  
+  <meta name="twitter:description" content="This is the Fields notes for Core Physics II." />
+  
+
+<meta name="author" content="Claire Greenland" />
+
+
+<meta name="date" content="2024-03-06" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="work-and-energy-in-electrostatics.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Fields</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Electrostatics</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#aims-of-this-section"><i class="fa fa-check"></i>Aims of this section</a></li>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#what-is-a-field"><i class="fa fa-check"></i><b>1.1</b> What is a field?</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="index.html"><a href="index.html#charges"><i class="fa fa-check"></i><b>1.1.1</b> Charges</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#scalar-and-vector-fields"><i class="fa fa-check"></i><b>1.2</b> Scalar and vector fields</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#link-between-scalar-and-vector-field"><i class="fa fa-check"></i><b>1.3</b> Link between scalar and vector field</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="index.html"><a href="index.html#other-operations-on-vectors"><i class="fa fa-check"></i><b>1.3.1</b> Other operations on vectors</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#representing-the-electric-field"><i class="fa fa-check"></i><b>1.4</b> Representing the electric field</a></li>
+<li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#equipotential-surfaces"><i class="fa fa-check"></i><b>1.5</b> Equipotential surfaces</a></li>
+<li class="chapter" data-level="1.6" data-path="index.html"><a href="index.html#summary"><i class="fa fa-check"></i><b>1.6</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="electric-potential.html"><a href="electric-potential.html"><i class="fa fa-check"></i><b>2</b> Electric potential</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="electric-potential.html"><a href="electric-potential.html#coulombs-law"><i class="fa fa-check"></i><b>2.1</b> Coulomb’s Law</a></li>
+<li class="chapter" data-level="2.2" data-path="electric-potential.html"><a href="electric-potential.html#the-electric-field"><i class="fa fa-check"></i><b>2.2</b> The electric field</a></li>
+<li class="chapter" data-level="2.3" data-path="electric-potential.html"><a href="electric-potential.html#principle-of-superposition"><i class="fa fa-check"></i><b>2.3</b> Principle of superposition</a></li>
+<li class="chapter" data-level="2.4" data-path="electric-potential.html"><a href="electric-potential.html#electric-dipole-field"><i class="fa fa-check"></i><b>2.4</b> Electric dipole field</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="electric-potential.html"><a href="electric-potential.html#electric-dipole-moment"><i class="fa fa-check"></i><b>2.4.1</b> Electric dipole moment</a></li>
+<li class="chapter" data-level="2.4.2" data-path="electric-potential.html"><a href="electric-potential.html#dipoles-in-external-electric-fields"><i class="fa fa-check"></i><b>2.4.2</b> Dipoles in external electric fields</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="electric-potential.html"><a href="electric-potential.html#continuous-charge-distributions"><i class="fa fa-check"></i><b>2.5</b> Continuous charge distributions</a></li>
+<li class="chapter" data-level="2.6" data-path="electric-potential.html"><a href="electric-potential.html#electric-flux-gausss-law"><i class="fa fa-check"></i><b>2.6</b> Electric flux &amp; Gauss’s Law</a></li>
+<li class="chapter" data-level="2.7" data-path="electric-potential.html"><a href="electric-potential.html#gausss-law"><i class="fa fa-check"></i><b>2.7</b> Gauss’s Law</a>
+<ul>
+<li class="chapter" data-level="2.7.1" data-path="electric-potential.html"><a href="electric-potential.html#field-inside-a-hollow-object"><i class="fa fa-check"></i><b>2.7.1</b> Field inside a hollow object</a></li>
+</ul></li>
+<li class="chapter" data-level="2.8" data-path="electric-potential.html"><a href="electric-potential.html#electric-potential-1"><i class="fa fa-check"></i><b>2.8</b> Electric potential</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="work-and-energy-in-electrostatics.html"><a href="work-and-energy-in-electrostatics.html"><i class="fa fa-check"></i><b>3</b> Work and energy in electrostatics</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="work-and-energy-in-electrostatics.html"><a href="work-and-energy-in-electrostatics.html#the-magnetic-field"><i class="fa fa-check"></i><b>3.1</b> The magnetic field</a></li>
+<li class="chapter" data-level="3.2" data-path="work-and-energy-in-electrostatics.html"><a href="work-and-energy-in-electrostatics.html#forces-from-magnetic-fields"><i class="fa fa-check"></i><b>3.2</b> Forces from Magnetic Fields</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="work-and-energy-in-electrostatics.html"><a href="work-and-energy-in-electrostatics.html#jj-thomsons-measurement-of-em"><i class="fa fa-check"></i><b>3.2.1</b> JJ Thomson’s measurement of <span class="math inline">\(e/m\)</span></a></li>
+<li class="chapter" data-level="3.2.2" data-path="work-and-energy-in-electrostatics.html"><a href="work-and-energy-in-electrostatics.html#circulating-charges"><i class="fa fa-check"></i><b>3.2.2</b> Circulating charges</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="magnetic-field-of-currents.html"><a href="magnetic-field-of-currents.html"><i class="fa fa-check"></i><b>4</b> Magnetic field of currents</a></li>
+<li class="chapter" data-level="5" data-path="magnetic-vector-potential.html"><a href="magnetic-vector-potential.html"><i class="fa fa-check"></i><b>5</b> Magnetic vector potential</a></li>
+<li class="chapter" data-level="6" data-path="gausss-law-1.html"><a href="gausss-law-1.html"><i class="fa fa-check"></i><b>6</b> Gauss’s Law</a></li>
+<li class="chapter" data-level="7" data-path="amperes-law-and-solenoids.html"><a href="amperes-law-and-solenoids.html"><i class="fa fa-check"></i><b>7</b> Ampere’s Law and solenoids</a></li>
+<li class="chapter" data-level="8" data-path="electromagnetic-induction.html"><a href="electromagnetic-induction.html"><i class="fa fa-check"></i><b>8</b> Electromagnetic induction</a></li>
+<li class="chapter" data-level="9" data-path="maxwells-equations-in-free-space.html"><a href="maxwells-equations-in-free-space.html"><i class="fa fa-check"></i><b>9</b> Maxwell’s equations in free space</a></li>
+<li class="chapter" data-level="10" data-path="magnetisation-and-polarisation.html"><a href="magnetisation-and-polarisation.html"><i class="fa fa-check"></i><b>10</b> Magnetisation and polarisation</a></li>
+<li class="chapter" data-level="11" data-path="maxwells-equations-in-matter.html"><a href="maxwells-equations-in-matter.html"><i class="fa fa-check"></i><b>11</b> Maxwell’s equations in matter</a></li>
+<li class="chapter" data-level="12" data-path="capacitors-and-inductors.html"><a href="capacitors-and-inductors.html"><i class="fa fa-check"></i><b>12</b> Capacitors and inductors</a></li>
+<li class="chapter" data-level="13" data-path="circuits.html"><a href="circuits.html"><i class="fa fa-check"></i><b>13</b> Circuits</a></li>
+<li class="chapter" data-level="14" data-path="impedance.html"><a href="impedance.html"><i class="fa fa-check"></i><b>14</b> Impedance</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Fields</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="electric-potential" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">Chapter 2</span> Electric potential<a href="electric-potential.html#electric-potential" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p><em>Recommended reading:</em> Tipler &amp; Mosca Chapters 21,22,23 and some of 24
+(please note that we are not covering dielectrics).</p>
+<div id="coulombs-law" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> Coulomb’s Law<a href="electric-potential.html#coulombs-law" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><em>Recommended reading:</em> Tipler &amp; Mosca 21-3</p>
+<p>Coulomb’s Law gives the magnitude and direction of the forces between
+charges.</p>
+<!-- ::: figurehere -->
+<!-- ![image](Figures/coulomb1.png){width="80mm"} -->
+<!-- ::: -->
+<!-- # ```{r echo=FALSE, coulomb1, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="Two charges, $q_1$ and $q_2$, separated by a distance of $r_{12}$, with the unit vector $\hat{\r}_{12}$ pointing in the direction from $q_1$ to $q_2$."} -->
+<!-- # -->
+<!-- # knitr::include_graphics("Figures/coulomb1.png") -->
+<!-- # -->
+<!-- # ``` -->
+<p>$```{r echo=FALSE, coulomb1, out.width=‘70%’, fig.show=‘hold’, fig.align=“center”, auto_pdf=TRUE, fig.cap=“Two charges, q_1 and q_2, separated by a distance of r_12, with the unit vector r_12 pointing in the direction from q_1 to q_2.”}</p>
+<p>knitr::include_graphics(“Figures/coulomb1.png”)</p>
+<p>```$</p>
+<p>The force on <span class="math inline">\(q_2\)</span> due to <span class="math inline">\(q_1\)</span> is given by:</p>
+<p><span class="math display" id="eq:coulombs">\[\begin{equation}
+\tag{2.1}
+\mathbf{F}_{12}= \frac{1}{4\pi \epsilon_0} \frac{q_1 q_2}{r_{12}^2} \hat{\mathbf{r}}_{12}
+\end{equation}\]</span></p>
+<p>The force on <span class="math inline">\(q_2\)</span> is directed <strong>away from</strong> <span class="math inline">\(q_1\)</span> if <span class="math inline">\(q_1 q_2\)</span> is
+positive (i.e. when the charges have the same sign - like charges
+repel). If <span class="math inline">\(q_1 q_2\)</span> is negative (charges have different signs), the
+force on <span class="math inline">\(q_2\)</span> is directed <strong>towards</strong> <span class="math inline">\(q_1\)</span> (unlike charges attract).</p>
+</div>
+<div id="the-electric-field" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> The electric field<a href="electric-potential.html#the-electric-field" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The electric field (<span class="math inline">\(\mathbf{E}\)</span>) is defined in terms of the force on a test
+charge <span class="math inline">\(q_0\)</span>. The force on <span class="math inline">\(q_0\)</span> due to another charge <span class="math inline">\(q\)</span> is</p>
+<p><span class="math display" id="eq:forceQ0">\[\begin{equation}
+\tag{2.2}
+\mathbf{F} = \frac{1}{4\pi \epsilon_0} \frac{q q_0}{r_{12}^2} \hat{\mathbf{r}}_{12}
+\end{equation}\]</span></p>
+<p>The electric field is the force divided by the magnitude of the test
+charge – the field is independent of the charge used to test it.</p>
+<p><span class="math display" id="eq:fieldQ">\[\begin{equation}
+\tag{2.3}
+\mathbf{E} = \frac{\mathbf{F}}{q_0} = \frac{1}{4\pi \epsilon_0} \frac{q}{r_{12}^2} \hat{\mathbf{r}}_{12}
+\end{equation}\]</span></p>
+</div>
+<div id="principle-of-superposition" class="section level2 hasAnchor" number="2.3">
+<h2><span class="header-section-number">2.3</span> Principle of superposition<a href="electric-potential.html#principle-of-superposition" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>What if there are several charges?</p>
+<p>Have a look at the diagram below:</p>
+<!-- ::: figurehere -->
+<!-- ![image](Figures/superposition.png){width="80mm"} -->
+<!-- ::: -->
+<p>$```{r echo=FALSE, superposition, out.width=‘70%’, fig.show=‘hold’, fig.align=“center”, auto_pdf=TRUE, fig.cap=“Three charges, 1, 2 and 3, where charges 1 and 3 are negative and charge 2 is positive. The forces shown are the forces exerted on charge 1 by charge 2 (F_21) and charge 3 (F_31), and the total resultant force on charge 1, F_R.”}</p>
+<p>knitr::include_graphics(“Figures/superposition.png”)</p>
+<p>```$</p>
+<p>The principle of superposition says that the <strong>resultant force</strong> <span class="math inline">\(\mathbf{F}_R\)</span>
+on charge 1 due to charge 2 and charge 3 is simply the vector sum of the
+forces due to the individual charges.</p>
+<p>The principle of superposition can be used to calculate the electric
+field <span class="math inline">\(\mathbf{E}\)</span> for a group of charges by summing the fields due to all
+charges present.</p>
+<p><span class="math display" id="eq:superposition">\[\begin{equation}
+\tag{2.4}
+\mathbf{E} = \mathbf{E}_1 + \mathbf{E}_2 + \mathbf{E}_3 + ... = \sum_i \mathbf{E}_i
+\end{equation}\]</span></p>
+</div>
+<div id="electric-dipole-field" class="section level2 hasAnchor" number="2.4">
+<h2><span class="header-section-number">2.4</span> Electric dipole field<a href="electric-potential.html#electric-dipole-field" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><em>Recommended reading:</em> Tipler &amp; Mosca 21-4</p>
+<p>An electric dipole is a combination of a positive and negative charge,
+equal in magnitude, a small distance from each other. The field for an
+electric dipole can be calculated by summing the field due to the two
+charges.</p>
+<!-- ::: figurehere -->
+<!-- ![image](Figures/dipole_field.png){width="80mm"} -->
+<!-- ::: -->
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:dipoleField"></span>
+<img src="Figures/dipole_field.png" alt="The electric field associated with a dipole." width="70%" />
+<p class="caption">
+Figure 2.1: The electric field associated with a dipole.
+</p>
+</div>
+<p>Consider the diagram of the dipole below:</p>
+<!-- ::: figurehere -->
+<!-- ![image](Figures/dipole_diagram.png){width="80mm"} -->
+<!-- ::: -->
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:dipoleDiagram"></span>
+<img src="Figures/dipole_diagram.png" alt="A dipole represented in the x-y plane, where d is the distance between the charges." width="70%" />
+<p class="caption">
+Figure 2.2: A dipole represented in the x-y plane, where d is the distance between the charges.
+</p>
+</div>
+<p>The magnitude of the field at point <span class="math inline">\(P\)</span> is given by</p>
+<p><span class="math display" id="eq:fieldatP">\[\begin{equation}
+\tag{2.5}
+E = \frac{1}{4 \pi \epsilon_0} \frac{qd}{\left( x^2 + \left( \frac{d}{2} \right)^2 \right)^{\frac{3}{2}}}
+\end{equation}\]</span></p>
+<p>and it is in the <span class="math inline">\(-\hat{\mathbf{j}}\)</span> (or <span class="math inline">\(-\hat{\mathbf{y}}\)</span>) direction.</p>
+<div id="electric-dipole-moment" class="section level3 hasAnchor" number="2.4.1">
+<h3><span class="header-section-number">2.4.1</span> Electric dipole moment<a href="electric-potential.html#electric-dipole-moment" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><em>Definition:</em> The electric dipole moment, <span class="math inline">\(\mathbf{p}\)</span>, is the product of the
+charge and the vector displacement from the negative charge to the
+positive charge in a dipole.</p>
+<!-- ::: figurehere -->
+<!-- ![image](Figures/dipole_moment.png){width="80mm"} -->
+<!-- ::: -->
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:dipoleMoment"></span>
+<img src="Figures/dipole_moment.png" alt="A diagram of an electric dipole, showing the vector quantities d and p, which are the length of the dipole and the dipole moment respectively." width="70%" />
+<p class="caption">
+Figure 2.3: A diagram of an electric dipole, showing the vector quantities d and p, which are the length of the dipole and the dipole moment respectively.
+</p>
+</div>
+<p><span class="math display" id="eq:dipoleMoment">\[\begin{equation}
+\tag{2.6}
+\mathbf{p} = q \mathbf{d}
+\end{equation}\]</span></p>
+<p>The electric field of the dipole (Equation
+<a href="electric-potential.html#eq:fieldatP">(2.5)</a>) can therefore be expressed (as a vector) in
+terms of the dipole moment, as follows:</p>
+<p><span class="math display" id="eq:fieldatPdipole">\[\begin{equation}
+\tag{2.7}
+\mathbf{E} = \frac{1}{4 \pi \epsilon_0} \frac{\mathbf{p}}{\left( x^2 + \left( \frac{d}{2} \right)^2 \right)^{\frac{3}{2}}}
+\end{equation}\]</span></p>
+<p>In the limit of <span class="math inline">\(x \gg d\)</span> (in other words, when we are at a distance <span class="math inline">\(x\)</span>
+from the dipole that is much larger than the size of the dipole <span class="math inline">\(d\)</span>) the
+electric field due to the dipole can be reduced to:</p>
+<p><span class="math display" id="eq:EvsP">\[\begin{equation}
+\tag{2.8}
+\mathbf{E} = \frac{1}{4\pi \epsilon_0} \frac{\mathbf{p}}{x^3}
+\end{equation}\]</span></p>
+<div class="flushleft">
+
+</div>
+</div>
+<div id="dipoles-in-external-electric-fields" class="section level3 hasAnchor" number="2.4.2">
+<h3><span class="header-section-number">2.4.2</span> Dipoles in external electric fields<a href="electric-potential.html#dipoles-in-external-electric-fields" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Consider a dipole in a uniform electric field. The force on each charge
+has magnitude <span class="math inline">\(qE\)</span>, but since these forces are in opposite directions
+there is no net force on the dipole. There is, however a torque about
+the centre of the dipole.</p>
+<!-- ::: figurehere -->
+<!-- ::: center -->
+<!-- ![image](Figures/dipole_extE.jpg){width="80mm"} -->
+<!-- ::: -->
+<!-- ::: -->
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:dipoleExtE"></span>
+<img src="Figures/dipole_extE.jpg" alt="Representation of a dipole placed in an external uniform electric field. theta is the angle the dipole takes to the direction of the external electric field and F is the force on each charge of the dipole due to the external field." width="70%" />
+<p class="caption">
+Figure 2.4: Representation of a dipole placed in an external uniform electric field. theta is the angle the dipole takes to the direction of the external electric field and F is the force on each charge of the dipole due to the external field.
+</p>
+</div>
+<p>The torque about the centre of the dipole is</p>
+<p><span class="math display" id="eq:torqueDipole">\[\begin{equation}
+\tag{2.9}
+\tau = 2 F \frac{d}{2} \sin\theta = q E d \sin\theta = |p|E \sin\theta
+\end{equation}\]</span></p>
+<p>The direction of the torque is perpendicular to the page, so it can be
+represented in vector form as <span class="math inline">\(\tau = \mathbf{p} \times \mathbf{E}\)</span>.</p>
+<p>The torque will cause the dipole to rotate and align itself with the
+electric field as shown here:</p>
+<!-- ::: figurehere -->
+<!-- ::: center -->
+<!-- ![image](Figures/dipole_align.png){width="80mm"} []{#fig:diAlign -->
+<!-- label="fig:diAlign"} -->
+<!-- ::: -->
+<!-- ::: -->
+<div class="figure" style="text-align: center">
+<img src="Figures/dipole_align.png" alt=" " width="70%" />
+<p class="caption">
+</p>
+</div>
+<p>We can use the work done by the field to determine what is the minimum
+energy configuration (although it should be fairly obvious). The work
+done is the integral of the product of the torque and the angle turned
+through:</p>
+<p><span class="math display" id="eq:workDone">\[\begin{equation}
+\tag{2.10}
+\begin{array}{rcll}
+W &amp;=&amp; \int_{\theta_0}^{\theta} |\tau| \mathrm{d}\theta \\
+&amp;=&amp; \int_{\theta_0}^{\theta} pE \sin\theta \mathrm{d}\theta \\
+&amp;=&amp; [-pE \cos\theta]_{\theta_0}^{\theta}
+\end{array}
+\end{equation}\]</span></p>
+<p>The change in potential energy is <span class="math inline">\(\Delta U = W\)</span>, hence:
+<span class="math display" id="eq:changeEpot">\[\begin{equation}
+\tag{2.11}
+\Delta U = U(\theta_0) - U(\theta) = pE(\cos⁡\theta_0 - cos\theta)
+\end{equation}\]</span></p>
+<p>The zero of potential energy <span class="math inline">\(U(\theta_0)\)</span> can be chosen to be anywhere,
+so we can choose it to correspond to <span class="math inline">\(\theta_0 = 90^{\circ}\)</span> in which
+case <span class="math inline">\(U = -pE \cos\theta\)</span>. This energy can be expressed in vector form
+as <span class="math inline">\(U = - \mathbf{p} \cdot \mathbf{E}\)</span>.</p>
+<p>Not surprisingly, the energy is a minimum when the dipole is aligned
+with the field at which point the torque will be zero.</p>
+</div>
+</div>
+<div id="continuous-charge-distributions" class="section level2 hasAnchor" number="2.5">
+<h2><span class="header-section-number">2.5</span> Continuous charge distributions<a href="electric-potential.html#continuous-charge-distributions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><em>Recommended reading:</em> Tipler &amp; Mosca Chapter 22</p>
+<p>Charges are discrete i.e. all charges sit on point like particles but if
+we have a large number of changes they can be treated as a continuous
+charge distribution. Continuous charge distributions can be described by
+linear, surface or volume charge densities. To use Coulomb’s Law to
+calculate the electric field in these cases you may need to integrate
+using the charge density.</p>
+<div class="flushleft">
+
+</div>
+</div>
+<div id="electric-flux-gausss-law" class="section level2 hasAnchor" number="2.6">
+<h2><span class="header-section-number">2.6</span> Electric flux &amp; Gauss’s Law<a href="electric-potential.html#electric-flux-gausss-law" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Flux has been found to be a concept that’s often misunderstood when
+discussing electric fields.</p>
+<div class="flushleft">
+
+</div>
+<p>But in the case of the electric field from static charges nothing is
+“flowing”. You can think of it as the number of field lines passing
+through a unit of area. Alternatively consider an analogy of a light
+source – a source of photons.</p>
+<div class="figurehere">
+<div class="center">
+<p><img src="Figures/lightFlux.png" style="width:100mm" alt="image" /> <span id="fig:lightFlux" label="fig:lightFlux"></span></p>
+</div>
+</div>
+<p>Since photons travel in straight lines, the number of photons passing
+through area <span class="math inline">\(A_1\)</span> in unit time is the same as that passing through area
+<span class="math inline">\(A_2\)</span>, i.e. the flux of photons is the same, <span class="math inline">\(I_1 A_1 = I_2 A_2\)</span> –
+where <span class="math inline">\(I_{1,2}\)</span> is photon intensity. The intensity of photons is
+proportional to <span class="math inline">\(\frac{1}{A} \propto \frac{1}{r^2}\)</span> so the photon field
+depends on <span class="math inline">\(\frac{1}{r^2}\)</span>. Replace the light source with a source of
+electric field e.g. a point charge. The field starts at the point charge
+and spreads out. The amount of field doesn’t increase as we move away
+from the charge because there is no source of electric field.</p>
+<div class="figurehere">
+<div class="center">
+<p><img src="Figures/elecFlux1.png" style="width:100mm" alt="image" /> <span id="fig:elecFlux1" label="fig:elecFlux1"></span></p>
+</div>
+</div>
+<p>Consider the field in and out of the volume enclosed between the two
+areas (a truncated cone). The total field in and out is the surface
+integral of the component of the field normal to the surfaces. On the
+curved faces, the normal component of <span class="math inline">\(\mathbf{E}\)</span> is zero. On the spherical
+faces, <span class="math inline">\(A_1\)</span> and <span class="math inline">\(A_2\)</span>, the field is normal. If flux into the volume is
+negative, and flux out is positive <span class="math inline">\(\mathbf{E}\)</span> decreases with <span class="math inline">\(\frac{1}{r^2}\)</span>
+and the area increases with <span class="math inline">\(r^2\)</span>. So the fluxes through the two faces,
+<span class="math inline">\(A_1\)</span> and <span class="math inline">\(A_2\)</span>, are <strong>equal</strong> and <strong>opposite</strong>.</p>
+<div class="figurehere">
+<div class="center">
+<p><img src="Figures/elecFlux2.png" style="width:115mm" alt="image" /> <span id="fig:elecFlux2" label="fig:elecFlux2"></span></p>
+</div>
+</div>
+<p>If a surface is tilted at an angle <span class="math inline">\(\theta\)</span> the field normal to the
+surface is <span class="math inline">\(\mathbf{E}_n = \mathbf{E} \cos\theta\)</span>. To determine the flux through the
+surface we need ∯ <span class="math inline">\(E \cos\theta \mathrm{d} A\)</span>, where the integral is over
+the surface. We can see that this flux is still the same as that through
+<span class="math inline">\(A_1\)</span> and <span class="math inline">\(A_2\)</span> because all the flux that impinges on <span class="math inline">\(A_2\)</span> also
+impinges on <span class="math inline">\(A_3\)</span>.</p>
+<p>Consider a spherical surface with a point charge <span class="math inline">\(q\)</span> at the centre:</p>
+<div class="figurehere">
+<div class="center">
+<p><img src="Figures/elecFlux3.png" style="width:80mm" alt="image" /> <span id="fig:elecFlux3" label="fig:elecFlux3"></span></p>
+</div>
+</div>
+<p>The net flux is non-zero as <span class="math inline">\(\mathbf{E}\)</span> is pointing outwards over the whole
+spherical surface. Because of the symmetry the magnitude of <span class="math inline">\(\mathbf{E}\)</span> is
+consistent across the surface and <span class="math inline">\(\mathbf{E}\)</span> is always perpendicular to the
+surface.</p>
+<p>Total flux of <span class="math inline">\(\mathbf{E}\)</span> is <span class="math inline">\(\Phi_{\mathbf{E}} = E_n \times Area\)</span>. Therefore
+<span class="math display" id="eq:fluxE">\[\begin{equation}
+\tag{2.12}
+\Phi_E = \frac{q}{4\pi\epsilon_0 r^2} \times 4\pi r^2 = \frac{q}{\epsilon_0}
+\end{equation}\]</span></p>
+<p><strong>This result is independent of the radius of the sphere – in fact, it
+is independent of the shape of the surface enclosing the charge.</strong></p>
+</div>
+<div id="gausss-law" class="section level2 hasAnchor" number="2.7">
+<h2><span class="header-section-number">2.7</span> Gauss’s Law<a href="electric-potential.html#gausss-law" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>(<strong>Note:</strong> In Equations <a href="electric-potential.html#eq:GaussnoQ">(2.13)</a>, <a href="electric-potential.html#eq:Gauss2">(2.14)</a> and <a href="electric-potential.html#eq:GaussLaw">(2.15)</a>, <span class="math inline">\(\iint_S\)</span> represents the closed surface integral, which is denoted elsewhere in the text as ∯.)</p>
+<p>We can calculate the electric field from any charge distribution with
+Coulomb’s Law. Gauss’ Law in the integral form which we’ll use here can
+calculate fields in some highly symmetric cases. Gauss’ Law states that
+for any <strong>closed surface</strong> <span class="math inline">\(S\)</span>:</p>
+<p><span class="math display" id="eq:GaussnoQ">\[\begin{equation}
+\tag{2.13}
+\iint_S{E_n} \mathrm{d} \mathbf{S} = 0
+\end{equation}\]</span></p>
+<p><strong>if no charge is enclosed</strong> and</p>
+<p><span class="math display" id="eq:Gauss2">\[\begin{equation}
+\tag{2.14}
+\iint_S{E_n} \mathrm{d} \mathbf{S} = \frac{q}{\epsilon_0}
+\end{equation}\]</span></p>
+<p><strong>if charge <span class="math inline">\(q\)</span> is enclosed</strong>. Or in words: the magnitude of the electric field normal to the surface
+integrated over the whole of the surface is equal to the charge enclosed
+divided by <span class="math inline">\(\epsilon_0\)</span>.</p>
+<p>More generally, the integral form of Gauss’s Law is
+<span class="math display" id="eq:GaussLaw">\[\begin{equation}
+\tag{2.15}
+\iint_S \mathbf{E} \cdot \mathrm{d} \mathbf{S} =\frac{Q}{\epsilon_0}
+\end{equation}\]</span></p>
+<p><span class="math inline">\(\mathrm{d} \mathbf{S}\)</span> is a vector normal to the surface with magnitude equal to the
+size of an element of area. <span class="math inline">\(\mathbf{E} \cdot \mathrm{d} \mathbf{S}\)</span>, which is a scalar product,
+extracts the component of the electric field normal to the surface and
+multiplies it by the size of an element of the area. <span class="math inline">\(Q\)</span> is the total
+charge enclosed within <span class="math inline">\(S\)</span>, where <span class="math inline">\(Q = \sum_i q_i\)</span> where the sum runs
+over all charges inside <span class="math inline">\(S\)</span> (where <span class="math inline">\(S\)</span> is a closed surface enclosing a
+volume <span class="math inline">\(V\)</span>).</p>
+<p>You can also think in terms of field lines the total number of field
+lines leaving the surface is proportional to the total number of charges
+inside the surface. If there are positive and negative charges then some
+field lines will go in and some out. if the amount of positive and
+negative charge is equal these two contributions cancel. Note that this
+doesn’t mean that the is no field anywhere at the surface but that the
+contributions of positive and negative flux over the whole surface
+cancel. The integral form of Gauss’s Law can be used to find the
+electric field for symmetrical systems of charges. We’ll look at three
+classic examples:</p>
+<ul>
+<li><p>Field due to a line of charge, linear charge density <span class="math inline">\(\lambda\)</span> C/m</p></li>
+<li><p>Field due to an infinite plane of charge, surface charge density
+<span class="math inline">\(\sigma\)</span> C/m<span class="math inline">\(^2\)</span></p></li>
+<li><p>Field due to a solid sphere of uniformly distributed charge <span class="math inline">\(Q\)</span></p></li>
+</ul>
+<div class="flushleft">
+
+</div>
+<div id="field-inside-a-hollow-object" class="section level3 hasAnchor" number="2.7.1">
+<h3><span class="header-section-number">2.7.1</span> Field inside a hollow object<a href="electric-potential.html#field-inside-a-hollow-object" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Consider a spherical shell with charge <span class="math inline">\(Q\)</span>. By symmetry, the field is
+radial in all directions.</p>
+<p>Applying Gauss’s Law with a spherical Gaussian surface <strong>outside</strong> the
+shell, as shown in , gives:
+<span class="math display" id="eq:fieldShell">\[\begin{equation}
+\tag{2.16}
+E_r = \frac{Q}{4\pi\epsilon_0 r^2}
+\end{equation}\]</span></p>
+<p>i.e. the same as point charge or a solid sphere of charge.</p>
+<!-- ::: figurehere -->
+<!-- ::: center -->
+<!-- ![image](Figures/GaussOutsideShell.png){width="80mm"} -->
+<!-- ::: -->
+<!-- ::: -->
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:GaussOutsideShell"></span>
+<img src="Figures/GaussOutsideShell.png" alt="A spherical shell (dark red area) of charge Q and radius r producing an electric field E (light red arrows). The dotted line outside the shell can be selected as a Gaussian surface. " width="70%" />
+<p class="caption">
+Figure 2.5: A spherical shell (dark red area) of charge Q and radius r producing an electric field E (light red arrows). The dotted line outside the shell can be selected as a Gaussian surface.
+</p>
+</div>
+<p>Applying Gauss’s Law with a spherical Gaussian surface inside the shell
+gives <span class="math inline">\(E_r = 0\)</span> because there is no charge inside the surface.</p>
+<p><strong>There is no electric field inside a uniform shell of charge.</strong></p>
+<p>In a conductor, charges are free to move and as like charges repel
+excess charge will move to the outside surface of an isolated conductor.</p>
+<!-- ::: figurehere -->
+<!-- ::: center -->
+<!-- ![image](Figures/GaussInsideShell.png){width="80mm"} -->
+<!-- ::: -->
+<!-- ::: -->
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:GaussInsideShell"></span>
+<img src="Figures/GaussInsideShell.png" alt="The cross-section of a conductor, where the red circles represent the excess charge which will move to the outside surface of the conductor. The dotted line can be selected as a Gaussian surface to show that the field inside the conductor is zero (because there is no (net) charge enclosed in this Gaussian surface)." width="70%" />
+<p class="caption">
+Figure 2.6: The cross-section of a conductor, where the red circles represent the excess charge which will move to the outside surface of the conductor. The dotted line can be selected as a Gaussian surface to show that the field inside the conductor is zero (because there is no (net) charge enclosed in this Gaussian surface).
+</p>
+</div>
+<p>Consider a Gaussian surface just inside a conductor as shown in the diagram above. The
+electric field is zero everywhere inside the conductor – because all
+the charges are on the outside. The flux through the Gaussian surface
+must therefore be zero.</p>
+<p>This applies if there is a cavity inside the conductor and so inside any
+cavity in a conductor, the electric field is zero. This principle is
+used to build Faraday Cages to shield sensitive electronics.</p>
+<p>The field at the surface of a conductor is always perpendicular to the
+surface. If this wasn’t the case, there would be a component of the
+field tangential to the surface. The charges in the conductor would move
+across the surface under the influence of the tangential component of
+the field until that component was zero. Therefore the field is always
+perpendicular to the surface.</p>
+</div>
+</div>
+<div id="electric-potential-1" class="section level2 hasAnchor" number="2.8">
+<h2><span class="header-section-number">2.8</span> Electric potential<a href="electric-potential.html#electric-potential-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The electric potential due to a positive charge is positive. The
+electric potential due to a negative charge is negative. The potential
+difference between two points, <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>, is</p>
+<p><span class="math display" id="eq:DeltaV">\[\begin{equation}
+\tag{2.17}
+\Delta V = V_b - V_a =\frac{(U_b - U_a)}{q_0}   
+\end{equation}\]</span></p>
+<p>The electric (or electrostatic) potential, often just called potential,
+is defined as the potential energy per unit (test) charge.</p>
+<p>Consider bringing an infinitesimal test charge (<span class="math inline">\(q_0\)</span>) from infinity
+into a region containing a system of charges. If <span class="math inline">\(U\)</span> is the final
+potential energy of the charge the electric potential is given by
+<span class="math inline">\(V = U/q_0\)</span>.</p>
+<p>The change in potential energy in going from point <span class="math inline">\(a\)</span> to point <span class="math inline">\(b\)</span> is
+given by the integral along the path from <span class="math inline">\(a\)</span> to <span class="math inline">\(b\)</span> of the work done on
+the charge:</p>
+<p><span class="math display" id="eq:DeltaU">\[\begin{equation}
+\tag{2.18}
+\Delta U = - W_{ab} = -\int_a^b \mathbf{F} \cdot \mathrm{d}\mathrm{l} = -q_0 \int_a^b \mathbf{E} \cdot \mathrm{d}\mathrm{l}
+\end{equation}\]</span></p>
+<p>We know that
+<span class="math display" id="eq:DeltaU2">\[\begin{equation}
+\tag{2.19}
+\frac{\Delta U}{q_0} = V_b - V_a
+\end{equation}\]</span></p>
+<p>hence</p>
+<p><span class="math display" id="eq:DeltaVab">\[\begin{equation}
+\tag{2.20}
+\Delta V_{ab} = -\int_a^b \mathbf{E} \cdot \mathrm{d}\mathrm{l}
+\end{equation}\]</span></p>
+<p>So the change in electrical potential is the line integral of the
+electric field along the path from <span class="math inline">\(a\)</span> to <span class="math inline">\(b\)</span>. We can choose the
+reference point of the potential to be where we like but normally select
+infinity. So</p>
+<p><span class="math display" id="eq:Vb">\[\begin{equation}
+\tag{2.21}
+V_b = -\int_\infty^b \mathbf{E} \cdot \mathrm{d}\mathrm{l}
+\end{equation}\]</span></p>
+<p>The potential at a distance <span class="math inline">\(r\)</span> from a point charge is</p>
+<p><span class="math display" id="eq:V-r">\[\begin{equation}
+\tag{2.22}
+\begin{array}{rcll}
+V(r) &amp;=&amp; -\int_\infty^r \frac{1}{4\pi\epsilon_0} \frac{q}{r^2} \mathrm{d} r \\
+     &amp;=&amp; \frac{q}{4\pi\epsilon_0} \left[ \frac{1}{r} - \frac{1}{\infty} \right] \\
+     &amp;=&amp; \frac{q}{4\pi\epsilon_0} \frac{1}{r}
+\end{array}
+\end{equation}\]</span></p>
+<p><strong>Note:</strong> The dependence of the potential for a point charge on distance
+is <span class="math inline">\(\frac{1}{r}\)</span> and the force depends on <span class="math inline">\(\frac{1}{r^2}\)</span> because the
+electric field is the gradient of the potential.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="work-and-energy-in-electrostatics.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/index.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

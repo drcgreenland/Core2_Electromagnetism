@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 4 Magnetic fields and the Lorentz Force | Fields</title>
+  <meta name="description" content="This is the Fields notes for Core Physics II." />
+  <meta name="generator" content="bookdown 0.37 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 4 Magnetic fields and the Lorentz Force | Fields" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="This is the Fields notes for Core Physics II." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 4 Magnetic fields and the Lorentz Force | Fields" />
+  
+  <meta name="twitter:description" content="This is the Fields notes for Core Physics II." />
+  
+
+<meta name="author" content="Claire Greenland" />
+
+
+<meta name="date" content="2024-03-05" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="work-and-energy-in-electrostatics.html"/>
+<link rel="next" href="magnetic-field-of-currents.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Fields</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Electrostatics</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#aims-of-this-section"><i class="fa fa-check"></i>Aims of this section</a></li>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#what-is-a-field"><i class="fa fa-check"></i><b>1.1</b> What is a field?</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="index.html"><a href="index.html#charges"><i class="fa fa-check"></i><b>1.1.1</b> Charges</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#scalar-and-vector-fields"><i class="fa fa-check"></i><b>1.2</b> Scalar and vector fields</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#link-between-scalar-and-vector-field"><i class="fa fa-check"></i><b>1.3</b> Link between scalar and vector field</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="index.html"><a href="index.html#other-operations-on-vectors"><i class="fa fa-check"></i><b>1.3.1</b> Other operations on vectors</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#representing-the-electric-field"><i class="fa fa-check"></i><b>1.4</b> Representing the electric field</a></li>
+<li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#equipotential-surfaces"><i class="fa fa-check"></i><b>1.5</b> Equipotential surfaces</a></li>
+<li class="chapter" data-level="1.6" data-path="index.html"><a href="index.html#summary"><i class="fa fa-check"></i><b>1.6</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="electric-potential.html"><a href="electric-potential.html"><i class="fa fa-check"></i><b>2</b> Electric potential</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="electric-potential.html"><a href="electric-potential.html#coulombs-law"><i class="fa fa-check"></i><b>2.1</b> Coulomb’s Law</a></li>
+<li class="chapter" data-level="2.2" data-path="electric-potential.html"><a href="electric-potential.html#the-electric-field"><i class="fa fa-check"></i><b>2.2</b> The electric field</a></li>
+<li class="chapter" data-level="2.3" data-path="electric-potential.html"><a href="electric-potential.html#principle-of-superposition"><i class="fa fa-check"></i><b>2.3</b> Principle of superposition</a></li>
+<li class="chapter" data-level="2.4" data-path="electric-potential.html"><a href="electric-potential.html#electric-dipole-field"><i class="fa fa-check"></i><b>2.4</b> Electric dipole field</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="electric-potential.html"><a href="electric-potential.html#electric-dipole-moment"><i class="fa fa-check"></i><b>2.4.1</b> Electric dipole moment</a></li>
+<li class="chapter" data-level="2.4.2" data-path="electric-potential.html"><a href="electric-potential.html#dipoles-in-external-electric-fields"><i class="fa fa-check"></i><b>2.4.2</b> Dipoles in external electric fields</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="electric-potential.html"><a href="electric-potential.html#continuous-charge-distributions"><i class="fa fa-check"></i><b>2.5</b> Continuous charge distributions</a></li>
+<li class="chapter" data-level="2.6" data-path="electric-potential.html"><a href="electric-potential.html#electric-flux-gausss-law"><i class="fa fa-check"></i><b>2.6</b> Electric flux &amp; Gauss’s Law</a></li>
+<li class="chapter" data-level="2.7" data-path="electric-potential.html"><a href="electric-potential.html#gausss-law"><i class="fa fa-check"></i><b>2.7</b> Gauss’s Law</a>
+<ul>
+<li class="chapter" data-level="2.7.1" data-path="electric-potential.html"><a href="electric-potential.html#field-inside-a-hollow-object"><i class="fa fa-check"></i><b>2.7.1</b> Field inside a hollow object</a></li>
+</ul></li>
+<li class="chapter" data-level="2.8" data-path="electric-potential.html"><a href="electric-potential.html#electric-potential-1"><i class="fa fa-check"></i><b>2.8</b> Electric potential</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="work-and-energy-in-electrostatics.html"><a href="work-and-energy-in-electrostatics.html"><i class="fa fa-check"></i><b>3</b> Work and energy in electrostatics</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="work-and-energy-in-electrostatics.html"><a href="work-and-energy-in-electrostatics.html#the-magnetic-field"><i class="fa fa-check"></i><b>3.1</b> The magnetic field</a></li>
+<li class="chapter" data-level="3.2" data-path="work-and-energy-in-electrostatics.html"><a href="work-and-energy-in-electrostatics.html#forces-from-magnetic-fields"><i class="fa fa-check"></i><b>3.2</b> Forces from Magnetic Fields</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="work-and-energy-in-electrostatics.html"><a href="work-and-energy-in-electrostatics.html#jj-thomsons-measurement-of-em"><i class="fa fa-check"></i><b>3.2.1</b> JJ Thomson’s measurement of <span class="math inline">\(e/m\)</span></a></li>
+<li class="chapter" data-level="3.2.2" data-path="work-and-energy-in-electrostatics.html"><a href="work-and-energy-in-electrostatics.html#circulating-charges"><i class="fa fa-check"></i><b>3.2.2</b> Circulating charges</a></li>
+<li class="chapter" data-level="3.2.3" data-path="work-and-energy-in-electrostatics.html"><a href="work-and-energy-in-electrostatics.html#magnetic-force-on-a-wire"><i class="fa fa-check"></i><b>3.2.3</b> Magnetic force on a wire</a></li>
+<li class="chapter" data-level="3.2.4" data-path="work-and-energy-in-electrostatics.html"><a href="work-and-energy-in-electrostatics.html#force-on-current-loops-motors"><i class="fa fa-check"></i><b>3.2.4</b> Force on current loops &amp; motors</a></li>
+<li class="chapter" data-level="3.2.5" data-path="work-and-energy-in-electrostatics.html"><a href="work-and-energy-in-electrostatics.html#torque-on-a-coil"><i class="fa fa-check"></i><b>3.2.5</b> Torque on a coil</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="work-and-energy-in-electrostatics.html"><a href="work-and-energy-in-electrostatics.html#the-biot-savart-law"><i class="fa fa-check"></i><b>3.3</b> The Biot-Savart Law</a></li>
+<li class="chapter" data-level="3.4" data-path="work-and-energy-in-electrostatics.html"><a href="work-and-energy-in-electrostatics.html#ampères-law"><i class="fa fa-check"></i><b>3.4</b> Ampère’s Law</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="work-and-energy-in-electrostatics.html"><a href="work-and-energy-in-electrostatics.html#example-magnetic-field-of-a-wire"><i class="fa fa-check"></i><b>3.4.1</b> Example: Magnetic field of a wire</a></li>
+<li class="chapter" data-level="3.4.2" data-path="work-and-energy-in-electrostatics.html"><a href="work-and-energy-in-electrostatics.html#example-magnetic-field-of-a-solenoid"><i class="fa fa-check"></i><b>3.4.2</b> Example: Magnetic field of a solenoid</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="work-and-energy-in-electrostatics.html"><a href="work-and-energy-in-electrostatics.html#faradays-law-of-induction"><i class="fa fa-check"></i><b>3.5</b> Faraday’s Law of induction</a>
+<ul>
+<li class="chapter" data-level="3.5.1" data-path="work-and-energy-in-electrostatics.html"><a href="work-and-energy-in-electrostatics.html#transformers"><i class="fa fa-check"></i><b>3.5.1</b> Transformers</a></li>
+<li class="chapter" data-level="3.5.2" data-path="work-and-energy-in-electrostatics.html"><a href="work-and-energy-in-electrostatics.html#dynamo"><i class="fa fa-check"></i><b>3.5.2</b> Dynamo</a></li>
+<li class="chapter" data-level="3.5.3" data-path="work-and-energy-in-electrostatics.html"><a href="work-and-energy-in-electrostatics.html#the-moving-coil-microphone"><i class="fa fa-check"></i><b>3.5.3</b> The moving coil microphone</a></li>
+<li class="chapter" data-level="3.5.4" data-path="work-and-energy-in-electrostatics.html"><a href="work-and-energy-in-electrostatics.html#sec:eddy"><i class="fa fa-check"></i><b>3.5.4</b> Eddy current heating</a></li>
+</ul></li>
+<li class="chapter" data-level="3.6" data-path="work-and-energy-in-electrostatics.html"><a href="work-and-energy-in-electrostatics.html#lenzs-law"><i class="fa fa-check"></i><b>3.6</b> Lenz’s Law</a></li>
+<li class="chapter" data-level="3.7" data-path="work-and-energy-in-electrostatics.html"><a href="work-and-energy-in-electrostatics.html#inductance"><i class="fa fa-check"></i><b>3.7</b> Inductance</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="magnetic-fields-and-the-lorentz-force.html"><a href="magnetic-fields-and-the-lorentz-force.html"><i class="fa fa-check"></i><b>4</b> Magnetic fields and the Lorentz Force</a>
+<ul>
+<li class="chapter" data-level="" data-path="magnetic-fields-and-the-lorentz-force.html"><a href="magnetic-fields-and-the-lorentz-force.html#aims-of-this-section-1"><i class="fa fa-check"></i>Aims of this section</a></li>
+<li class="chapter" data-level="" data-path="magnetic-fields-and-the-lorentz-force.html"><a href="magnetic-fields-and-the-lorentz-force.html#assumed-knowledge"><i class="fa fa-check"></i>Assumed knowledge</a></li>
+<li class="chapter" data-level="4.1" data-path="magnetic-fields-and-the-lorentz-force.html"><a href="magnetic-fields-and-the-lorentz-force.html#components-in-circuits"><i class="fa fa-check"></i><b>4.1</b> Components in circuits</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="magnetic-fields-and-the-lorentz-force.html"><a href="magnetic-fields-and-the-lorentz-force.html#resistors"><i class="fa fa-check"></i><b>4.1.1</b> Resistors</a></li>
+<li class="chapter" data-level="4.1.2" data-path="magnetic-fields-and-the-lorentz-force.html"><a href="magnetic-fields-and-the-lorentz-force.html#capacitors"><i class="fa fa-check"></i><b>4.1.2</b> Capacitors</a></li>
+<li class="chapter" data-level="4.1.3" data-path="magnetic-fields-and-the-lorentz-force.html"><a href="magnetic-fields-and-the-lorentz-force.html#inductors"><i class="fa fa-check"></i><b>4.1.3</b> Inductors</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="magnetic-fields-and-the-lorentz-force.html"><a href="magnetic-fields-and-the-lorentz-force.html#kirchhoffs-rules"><i class="fa fa-check"></i><b>4.2</b> Kirchhoff’s Rules</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="magnetic-fields-and-the-lorentz-force.html"><a href="magnetic-fields-and-the-lorentz-force.html#the-loop-rule"><i class="fa fa-check"></i><b>4.2.1</b> The loop rule</a></li>
+<li class="chapter" data-level="4.2.2" data-path="magnetic-fields-and-the-lorentz-force.html"><a href="magnetic-fields-and-the-lorentz-force.html#the-junction-rule"><i class="fa fa-check"></i><b>4.2.2</b> The junction rule</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="magnetic-fields-and-the-lorentz-force.html"><a href="magnetic-fields-and-the-lorentz-force.html#capacitors-in-dc-circuits"><i class="fa fa-check"></i><b>4.3</b> Capacitors in DC circuits</a>
+<ul>
+<li class="chapter" data-level="" data-path="magnetic-fields-and-the-lorentz-force.html"><a href="magnetic-fields-and-the-lorentz-force.html#example-series-rc-circuit"><i class="fa fa-check"></i>Example: Series RC circuit</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="magnetic-fields-and-the-lorentz-force.html"><a href="magnetic-fields-and-the-lorentz-force.html#inductors-in-dc-circuits"><i class="fa fa-check"></i><b>4.4</b> Inductors in DC circuits</a></li>
+<li class="chapter" data-level="4.5" data-path="magnetic-fields-and-the-lorentz-force.html"><a href="magnetic-fields-and-the-lorentz-force.html#oscillations-in-lc-and-lcr-circuits"><i class="fa fa-check"></i><b>4.5</b> Oscillations in LC and LCR circuits</a>
+<ul>
+<li class="chapter" data-level="" data-path="magnetic-fields-and-the-lorentz-force.html"><a href="magnetic-fields-and-the-lorentz-force.html#example-lc-circuit"><i class="fa fa-check"></i>Example: LC circuit</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="magnetic-fields-and-the-lorentz-force.html"><a href="magnetic-fields-and-the-lorentz-force.html#complex-electrical-impedance"><i class="fa fa-check"></i><b>4.6</b> Complex electrical impedance</a></li>
+<li class="chapter" data-level="4.7" data-path="magnetic-fields-and-the-lorentz-force.html"><a href="magnetic-fields-and-the-lorentz-force.html#combining-complex-impedances"><i class="fa fa-check"></i><b>4.7</b> Combining complex impedances</a>
+<ul>
+<li class="chapter" data-level="" data-path="magnetic-fields-and-the-lorentz-force.html"><a href="magnetic-fields-and-the-lorentz-force.html#phase-of-current-at-resonance"><i class="fa fa-check"></i>Phase of current at resonance</a></li>
+</ul></li>
+<li class="chapter" data-level="4.8" data-path="magnetic-fields-and-the-lorentz-force.html"><a href="magnetic-fields-and-the-lorentz-force.html#energy-in-lcr-circuits"><i class="fa fa-check"></i><b>4.8</b> Energy in LCR circuits</a>
+<ul>
+<li class="chapter" data-level="4.8.1" data-path="magnetic-fields-and-the-lorentz-force.html"><a href="magnetic-fields-and-the-lorentz-force.html#energy-stored-in-an-inductor"><i class="fa fa-check"></i><b>4.8.1</b> Energy stored in an inductor</a></li>
+<li class="chapter" data-level="4.8.2" data-path="magnetic-fields-and-the-lorentz-force.html"><a href="magnetic-fields-and-the-lorentz-force.html#energy-stored-in-a-capacitor"><i class="fa fa-check"></i><b>4.8.2</b> Energy stored in a capacitor</a></li>
+</ul></li>
+<li class="chapter" data-level="4.9" data-path="magnetic-fields-and-the-lorentz-force.html"><a href="magnetic-fields-and-the-lorentz-force.html#summary-1"><i class="fa fa-check"></i><b>4.9</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="magnetic-field-of-currents.html"><a href="magnetic-field-of-currents.html"><i class="fa fa-check"></i><b>5</b> Magnetic field of currents</a></li>
+<li class="chapter" data-level="6" data-path="magnetic-vector-potential.html"><a href="magnetic-vector-potential.html"><i class="fa fa-check"></i><b>6</b> Magnetic vector potential</a></li>
+<li class="chapter" data-level="7" data-path="gausss-law-1.html"><a href="gausss-law-1.html"><i class="fa fa-check"></i><b>7</b> Gauss’s Law</a></li>
+<li class="chapter" data-level="8" data-path="amperes-law-and-solenoids.html"><a href="amperes-law-and-solenoids.html"><i class="fa fa-check"></i><b>8</b> Ampere’s Law and solenoids</a></li>
+<li class="chapter" data-level="9" data-path="electromagnetic-induction.html"><a href="electromagnetic-induction.html"><i class="fa fa-check"></i><b>9</b> Electromagnetic induction</a></li>
+<li class="chapter" data-level="10" data-path="maxwells-equations-in-free-space.html"><a href="maxwells-equations-in-free-space.html"><i class="fa fa-check"></i><b>10</b> Maxwell’s equations in free space</a></li>
+<li class="chapter" data-level="11" data-path="magnetisation-and-polarisation.html"><a href="magnetisation-and-polarisation.html"><i class="fa fa-check"></i><b>11</b> Magnetisation and polarisation</a></li>
+<li class="chapter" data-level="12" data-path="maxwells-equations-in-matter.html"><a href="maxwells-equations-in-matter.html"><i class="fa fa-check"></i><b>12</b> Maxwell’s equations in matter</a></li>
+<li class="chapter" data-level="13" data-path="capacitors-and-inductors.html"><a href="capacitors-and-inductors.html"><i class="fa fa-check"></i><b>13</b> Capacitors and inductors</a></li>
+<li class="chapter" data-level="14" data-path="circuits.html"><a href="circuits.html"><i class="fa fa-check"></i><b>14</b> Circuits</a></li>
+<li class="chapter" data-level="15" data-path="impedance.html"><a href="impedance.html"><i class="fa fa-check"></i><b>15</b> Impedance</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Fields</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="magnetic-fields-and-the-lorentz-force" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">Chapter 4</span> Magnetic fields and the Lorentz Force<a href="magnetic-fields-and-the-lorentz-force.html#magnetic-fields-and-the-lorentz-force" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="aims-of-this-section-1" class="section level2 unnumbered hasAnchor">
+<h2>Aims of this section<a href="magnetic-fields-and-the-lorentz-force.html#aims-of-this-section-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>At the end of this section you should be able to</p>
+<ul>
+<li><p>Analyse DC circuits containing resistance, capacitance and
+inductance and with more than one source of EMF to determine the
+current flowing at any point.</p></li>
+<li><p>Analyse AC circuits including the same types of components using
+complex notation for impedance to determine the current and its
+phase relation to the applied voltage.</p></li>
+<li><p>Determine the parameters associated with oscillations in LC and LCR
+circuits including the energy stored.</p></li>
+</ul>
+</div>
+<div id="assumed-knowledge" class="section level2 unnumbered hasAnchor">
+<h2>Assumed knowledge<a href="magnetic-fields-and-the-lorentz-force.html#assumed-knowledge" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li><p>Conventional current is the flow of positive changes from more
+positive potential to less positive potential. (Tipler &amp; Mosca 25-1)</p></li>
+<li><p>Ohm’s Law – <span class="math inline">\(V = IR\)</span> (Tipler &amp; Mosca 25-2)</p></li>
+<li><p>Expressions for combining resistors (and impedances in general) in
+series and parallel (Tipler &amp; Mosca 25-4):</p>
+<ul>
+<li><p>Series - <span class="math inline">\(R = R_1 + R_2+ R_3 + ...\)</span></p></li>
+<li><p>Parallel –
+<span class="math inline">\(\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + ...\)</span></p></li>
+</ul></li>
+</ul>
+</div>
+<div id="components-in-circuits" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> Components in circuits<a href="magnetic-fields-and-the-lorentz-force.html#components-in-circuits" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>We consider the following components;</p>
+<ul>
+<li><p>Sources of Electromotive force (EMF) that produce a potential
+difference between their terminals</p>
+<ul>
+<li><p>Cells (batteries)</p></li>
+<li><p>Generators</p></li>
+</ul></li>
+<li><p>Resistors</p></li>
+<li><p>Capacitors</p></li>
+<li><p>Inductors</p></li>
+</ul>
+<p>These components present obstructions to current flow through circuits.</p>
+<!-- ::: figurehere -->
+<!-- ::: center -->
+<!-- ![image](Figures/ances_summary.png){width="120mm"} -->
+<!-- ::: -->
+<!-- ::: -->
+<p><img src="Figures/ances_summary.png" width="70%" style="display: block; margin: auto;" /></p>
+<div id="resistors" class="section level3 hasAnchor" number="4.1.1">
+<h3><span class="header-section-number">4.1.1</span> Resistors<a href="magnetic-fields-and-the-lorentz-force.html#resistors" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><em>Recommended reading:</em> Tipler &amp; Mosca 25-2</p>
+<p>Resistors are passive components that resist the flow of current within
+the circuit. Resistance is a type of impedance. Resistance is measured
+in Ohms (<span class="math inline">\(\Omega\)</span>) where<br />
+<span class="math inline">\(1 \; \Omega = \frac{1 \; \text{V}}{1 \; \text{A}} = 1 \; \text{kg} \; \text{m}^2 \; \text{A}^{-2} \; \text{s}^{-3}\)</span><br />
+Ohmic resistors obey Ohm’s Law, which is
+<span class="math display" id="eq:Ohms">\[\begin{equation}
+\tag{4.1}
+V = IR
+\end{equation}\]</span></p>
+<p>For an Ohmic resistor the resistance does not depend on current or
+potential drop. Real resistors will show some change in resistance with
+temperature.</p>
+</div>
+<div id="capacitors" class="section level3 hasAnchor" number="4.1.2">
+<h3><span class="header-section-number">4.1.2</span> Capacitors<a href="magnetic-fields-and-the-lorentz-force.html#capacitors" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><em>Recommended reading:</em> Tipler &amp; Mosca 24-3</p>
+<p>Capacitor are reactive components. They have the intrinsic property of
+capacitance and because of this offer reactance to a change in voltage.
+Reactance is a type of <strong>impedance</strong> that depends on the applied
+voltage, in particular, the frequency of an alternating voltage.</p>
+<p>Capacitance is measured in Farads (F) where<br />
+<span class="math inline">\(1 \; \text{F} = \frac{1 \; \text{C}}{1 \; \text{V}} = 1 \; \text{A}^2 \; \text{s}^4 \; \text{kg}^{-1} \; \text{m}^{-2}\)</span></p>
+<p>Capacitors are devices that store charge. The capacitance indicates how
+much charge can be stored at a given voltage. The relationship between
+voltage (<span class="math inline">\(V\)</span>), charge (<span class="math inline">\(Q\)</span>) and capacitance (<span class="math inline">\(C\)</span>) in a capacitor is
+therefore</p>
+<p><span class="math display" id="eq:Vcapacitor">\[\begin{equation}
+\tag{4.2}
+V_C = \frac{Q}{C}
+\end{equation}\]</span></p>
+</div>
+<div id="inductors" class="section level3 hasAnchor" number="4.1.3">
+<h3><span class="header-section-number">4.1.3</span> Inductors<a href="magnetic-fields-and-the-lorentz-force.html#inductors" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Inductors are reactive components. They have the intrinsic property of
+<strong>inductance</strong> and because of this offer reactance to a change in
+current.</p>
+<p>Inductance <span class="math inline">\(L\)</span> is measured in Henrys (H), where<br />
+<span class="math inline">\(1 \; \text{H} = \frac{1 \; \text{V} \; \times 1 \; \text{s} } { 1 \; \text{A} } = 1 \; \text{kg} \; \text{m}^{2} \; \text{s}^{-1} \; \text{A}^{-2}\)</span></p>
+<p>Inductors are devices that resist a change in current because the
+changing magnetic field produced in the inductor by a changing current
+induces an EMF that opposes the change in current in the device itself:</p>
+<p><span class="math display" id="eq:Vinductor">\[\begin{equation}
+\tag{4.3}
+V_L  = -L \frac{\mathrm{d} I}{\mathrm{d} t}
+\end{equation}\]</span></p>
+<!-- ::: figurehere -->
+<!-- ::: center -->
+<!-- ![image](Figures/LCR_symbols.png){width="120mm"} -->
+<!-- ::: -->
+<!-- ::: -->
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:LCRsymbols"></span>
+<img src="Figures/LCR_symbols.png" alt="Symbols for a) a resistor, b) a capacitor and c) an inductor commonly used in circuit diagrams." width="70%" />
+<p class="caption">
+Figure 4.1: Symbols for a) a resistor, b) a capacitor and c) an inductor commonly used in circuit diagrams.
+</p>
+</div>
+</div>
+</div>
+<div id="kirchhoffs-rules" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> Kirchhoff’s Rules<a href="magnetic-fields-and-the-lorentz-force.html#kirchhoffs-rules" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><em>Recommended reading:</em> Tipler &amp; Mosca 25-5</p>
+<p>Kirchoff’s Rules are simple rules which can be applied to any electrical
+circuit to compute voltages and currents.</p>
+<div id="the-loop-rule" class="section level3 hasAnchor" number="4.2.1">
+<h3><span class="header-section-number">4.2.1</span> The loop rule<a href="magnetic-fields-and-the-lorentz-force.html#the-loop-rule" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The loop rule expresses conservation of energy within the circuit. When
+current flows around any closed loop in the circuit the sum of all the
+potential changes must be zero otherwise energy would not be conserved.
+The rule states:<br />
+“Around any closed loop the algebraic sum of the changes in potential
+must equal zero"</p>
+<p><span class="math display" id="eq:sumEpsilon">\[\begin{equation}
+\tag{4.4}
+\sum_i \epsilon_i =0
+\end{equation}\]</span></p>
+</div>
+<div id="the-junction-rule" class="section level3 hasAnchor" number="4.2.2">
+<h3><span class="header-section-number">4.2.2</span> The junction rule<a href="magnetic-fields-and-the-lorentz-force.html#the-junction-rule" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The junction rule expresses conservation of charge within a circuit.
+Charge doesn’t collect at junctions so any flow of current in must be
+matched by current flow out of a junction. The rule states:<br />
+</p>
+<p>“The algebraic sum of currents into a junction must be equal to zero"</p>
+<p><span class="math display" id="eq:sumCurrents">\[\begin{equation}
+\tag{4.5}
+I_1 = I_2 + I_3
+\end{equation}\]</span></p>
+<!-- ::: figurehere -->
+<!-- ::: center -->
+<!-- ![image](Figures/junction_rule.png){width="80mm"} -->
+<!-- ::: -->
+<!-- ::: -->
+<p><img src="Figures/junction_rule.png" width="70%" style="display: block; margin: auto;" /></p>
+<div class="flushleft">
+
+</div>
+</div>
+</div>
+<div id="capacitors-in-dc-circuits" class="section level2 hasAnchor" number="4.3">
+<h2><span class="header-section-number">4.3</span> Capacitors in DC circuits<a href="magnetic-fields-and-the-lorentz-force.html#capacitors-in-dc-circuits" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><em>Recommended reading:</em> Tipler &amp; Mosca 25-6</p>
+<p>A capacitor connected to a DC voltage source <span class="math inline">\(V\)</span> will charge until
+<span class="math inline">\(V _C\)</span> (voltage across the capacitor) <span class="math inline">\(= V\)</span>. If there was no resistance
+this would be instantaneous. But real circuits have resistance so there
+is some transient behaviour. In most A-level syllabuses this is covered
+at some level by considering the discharging of capacitors. Here we look
+at a capacitor charging.</p>
+<div id="example-series-rc-circuit" class="section level3 unnumbered hasAnchor">
+<h3>Example: Series RC circuit<a href="magnetic-fields-and-the-lorentz-force.html#example-series-rc-circuit" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<!-- ::: figurehere -->
+<!-- ::: center -->
+<!-- ![image](Figures/seriesRC.png){width="100mm"} -->
+<!-- ::: -->
+<!-- ::: -->
+<p><img src="Figures/seriesRC.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>When the switch is closed a current flows in a clockwise direction.
+Considering the potential difference to be positive if it increases in a
+clockwise direction.<br />
+The potential difference across the source of EMF is <span class="math inline">\(+\epsilon\)</span>.<br />
+The potential difference across the resistor is <span class="math inline">\(-IR\)</span>.<br />
+The potential difference across the capacitor is <span class="math inline">\(-\frac{Q}{C}\)</span>.<br />
+The current <span class="math inline">\(I\)</span> and charge <span class="math inline">\(Q\)</span> are related by <span class="math inline">\(I = \frac{\mathrm{d} Q}{\mathrm{d} t}\)</span>.<br />
+From Kirchoff’s loop rule the sum of all the voltages is
+<span class="math inline">\(0 \therefore +\epsilon - IR - \frac{Q}{C} = 0\)</span>.<br />
+Substituting for <span class="math inline">\(I\)</span> we get
+<span class="math inline">\(\epsilon - \frac{\mathrm{d} Q}{\mathrm{d} t} R - \frac{Q}{C} = 0\)</span> and the solution of
+that equation is
+<span class="math inline">\(Q = \epsilon C \left(1 + \exp⁡\left(-\frac{t}{RC} \right) \right)\)</span> and
+the current is
+<span class="math inline">\(I = \frac{\mathrm{d} Q}{\mathrm{d} t} = \frac{\epsilon}{R} \exp\left( - \frac{t}{RC} \right)\)</span>.<br />
+We can then calculate the voltage across the different components as a
+function of time.<br />
+The capacitor:
+<span class="math inline">\(V_C = \frac{Q}{C} = \epsilon \left(1 - \exp⁡ \left(- \frac{t}{RC} \right) \right)\)</span>.<br />
+The resistor:
+<span class="math inline">\(V_R = IR = \frac{\mathrm{d} Q}{\mathrm{d} t} R = \epsilon \exp⁡\left(- \frac{t}{RC} \right)\)</span>.</p>
+</div>
+</div>
+<div id="inductors-in-dc-circuits" class="section level2 hasAnchor" number="4.4">
+<h2><span class="header-section-number">4.4</span> Inductors in DC circuits<a href="magnetic-fields-and-the-lorentz-force.html#inductors-in-dc-circuits" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><em>Recommended reading:</em> Tipler &amp; Mosca 28-6</p>
+<p>The current through an inductor connected to a DC voltage will increase
+continuously. If there was no resistance this would continue for ever.
+But real circuits have resistance so there is some transient behaviour
+which is similar to the LC circuit capacitors but not quite the same.
+For the LR circuit shown below, the current and potential differences as
+a function of time are<br />
+</p>
+<p>Current:
+<span class="math inline">\(I = \frac{\epsilon}{R} \left(1 - \exp\left(-\frac{Rt}{L}\right) \right)\)</span>.<br />
+</p>
+<p>Potential difference across the inductor:
+<span class="math inline">\(V_L = \epsilon \exp⁡\left(- \frac{Rt}{L} \right)\)</span>.<br />
+</p>
+<p>Potential difference across the resistor:
+<span class="math inline">\(V_R = \epsilon \left (1 - \exp⁡ \left( - \frac{Rt}{L} \right) \right)\)</span>.</p>
+<!-- ::: figurehere -->
+<!-- ::: center -->
+<!-- ![image](Figures/LR_circuit.png){width="100mm"} -->
+<!-- ::: -->
+<!-- ::: -->
+<p><img src="Figures/LR_circuit.png" width="70%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="oscillations-in-lc-and-lcr-circuits" class="section level2 hasAnchor" number="4.5">
+<h2><span class="header-section-number">4.5</span> Oscillations in LC and LCR circuits<a href="magnetic-fields-and-the-lorentz-force.html#oscillations-in-lc-and-lcr-circuits" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><em>Recommended reading:</em> Tipler &amp; Mosca 29-4, 29-6</p>
+<p>Consider this circuit which includes a capacitor and inductor. Some
+charge is introduced, for example by connecting a battery across the
+capacitor. If the battery is then removed, we can calculate what happens
+next.</p>
+<div id="example-lc-circuit" class="section level3 unnumbered hasAnchor">
+<h3>Example: LC circuit<a href="magnetic-fields-and-the-lorentz-force.html#example-lc-circuit" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<!-- ::: figurehere -->
+<!-- ::: center -->
+<!-- ![image](Figures/LC_circuit.png){width="100mm"} -->
+<!-- ::: -->
+<!-- ::: -->
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:LCcircuit"></span>
+<img src="Figures/LC_circuit.png" alt="An LC circuit." width="70%" />
+<p class="caption">
+Figure 4.2: An LC circuit.
+</p>
+</div>
+<p>Using Kirchhoff’s <strong>loop rule</strong>, <span class="math inline">\(\sum_i \epsilon_i = 0\)</span>.<br />
+The expressions for <span class="math inline">\(V_C\)</span> and <span class="math inline">\(V_L\)</span> are <span class="math inline">\(V_C = \frac{Q}{C}\)</span>,
+<span class="math inline">\(V_L = -L \frac{\mathrm{d} I}{\mathrm{d} t}\)</span>...<br />
+...and remembering that current is the rate of flow of charge. We can
+produce an equation for the charge on the capacitor and, from there, for
+the current:</p>
+<p><span class="math display" id="eq:QtDiff">\[\begin{equation}
+\tag{4.6}
+\frac{\mathrm{d}^2 Q}{\mathrm{d} t^2} = - \frac{1}{LC} Q
+\end{equation}\]</span></p>
+<p>This equation can be compared with the equation for undamped simple
+harmonic motion for a block on a spring (see Lecture 1 of Oscillations
+and Waves). By comparing with that equation, the solution to Equation <a href="#eq:Qtdiff">(<strong>??</strong>)</a> is</p>
+<p><span class="math display" id="eq:Qsolution">\[\begin{equation}
+\tag{4.7}
+Q = Q_0 \cos⁡(\omega_0 t + \delta)
+\end{equation}\]</span></p>
+<p>with the natural frequency given by <span class="math inline">\(\omega_0 = \sqrt{ \frac{1}{LC} }\)</span>.<br />
+Now add some resistance into the same circuit to create an LCR circuit.
+The resistance dissipates energy and so the energy in the circuit
+decreases with time i.e. the oscillations are damped.</p>
+<p>The equation for the charge on the capacitor is:
+<span class="math display" id="eq:diffEqQ">\[\begin{equation}
+\tag{4.8}
+L \frac{ \mathrm{d}^2 Q}{\mathrm{d} t^2} + R \frac{\mathrm{d} Q}{\mathrm{d} t} + \frac{Q}{C} = 0
+\end{equation}\]</span></p>
+<p>Comparing with the damped oscillations of a mass on a spring (as covered
+in Oscillations and Waves) the solution is:
+<span class="math display" id="eq:Qsol">\[\begin{equation}
+\tag{4.9}
+Q = Q_0 e^{ - \frac{-t}{2\tau} } e^{i(\omega^{&#39;} t + \delta)}
+\end{equation}\]</span></p>
+<p>where <span class="math inline">\(\tau = \frac{L}{R}\)</span>,
+<span class="math inline">\(\omega^{&#39;} = \sqrt{ \omega_0^2 - \left( \frac{R}{2 L} \right)^2}\)</span> and
+the phase <span class="math inline">\(\delta\)</span> will depend on the initial conditions.</p>
+<p>Applying an alternating voltage of frequency <span class="math inline">\(\omega\)</span> to an LCR circuit
+produces forced oscillations. The steady state solution is oscillations
+with frequency <span class="math inline">\(\omega\)</span> and an amplitude that depends on the applied
+frequency.</p>
+<p><span class="math display" id="eq:Q0">\[\begin{equation}
+\tag{4.10}
+Q_0 = \frac{V_0}{\sqrt{ L^2 (\omega_0^2 - \omega^2)^2 + R^2 \omega^2 }}
+\end{equation}\]</span></p>
+<p>The maximum <span class="math inline">\(Q_0\)</span> and therefore the maximum current occurs at resonance,
+when <span class="math inline">\(\omega_0 = \frac{1}{\sqrt{LC}}\)</span>, so it is possible to adjust <span class="math inline">\(C\)</span>
+or <span class="math inline">\(L\)</span> to tune to different frequencies as in a radio tuner. Ideally the
+resonance of your tuner would be sharp to reduce interference between
+radio stations with similar frequencies.</p>
+<p>The sharpness of the resonance depends on the <span class="math inline">\(Q\)</span>-factor for mechanical
+resonance:
+<span class="math display" id="eq:Qfactor">\[\begin{equation}
+\tag{4.11}
+Q = \frac{2\pi}{ \left( \frac{|\Delta E|}{E} \right)_{cycle} } = \frac{\omega_0}{\Delta \omega} = \frac{\omega_0 m}{b}
+\end{equation}\]</span></p>
+<p>Making the usual replacements <span class="math inline">\(m \rightarrow L\)</span>, <span class="math inline">\(b \rightarrow R\)</span>, for
+electrical circuits:
+<span class="math display" id="eq:QvsOmega">\[\begin{equation}
+\tag{4.12}
+Q = \frac{\omega_0 L}{R}
+\end{equation}\]</span></p>
+<p>The resonance is when <span class="math inline">\(Q\)</span> is large, so for a sharp peak (to only pick up
+one radio station at a time) you require that the circuit has a small
+resistance and a large inductance.</p>
+</div>
+</div>
+<div id="complex-electrical-impedance" class="section level2 hasAnchor" number="4.6">
+<h2><span class="header-section-number">4.6</span> Complex electrical impedance<a href="magnetic-fields-and-the-lorentz-force.html#complex-electrical-impedance" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The equation for forced oscillations of an LCR circuit, where the
+applied voltage is represented by the real part of <span class="math inline">\(V_0 e^{i\omega t}\)</span>,
+is</p>
+<p><span class="math display" id="eq:forcedOsc">\[\begin{equation}
+\tag{4.13}
+L \frac{ \mathrm{d}^2 Q}{\mathrm{d} t^2} + R \frac{\mathrm{d} Q}{\mathrm{d} t} + \frac{Q}{C} = V_0 e^{i\omega t}
+\end{equation}\]</span></p>
+<p>and the solution for the charge on the capacitor is
+<span class="math inline">\(Q = Q_0 e^{ i(\omega t + \delta)}\)</span>, with the phase <span class="math inline">\(\delta\)</span> in terms
+of <span class="math inline">\(C\)</span>, <span class="math inline">\(L\)</span> and <span class="math inline">\(R\)</span> for the general solution of the equation given by
+<span class="math inline">\(\tan \delta = \frac{R}{ \omega L - \frac{1}{\omega C} }\)</span>.</p>
+<p>The equations produced so far have been using charge <span class="math inline">\(Q\)</span> as the
+variable, but it would be more usual to measure current, and what we are
+interested in is the phase of the current relative to the applied
+voltage. However it is easy to determine the current from the charge.
+<span class="math display" id="eq:QthereforeI">\[\begin{equation}
+\tag{4.14}
+Q = Q_0 e^{i(\omega t + \delta)}  \therefore I = -\frac{\mathrm{d} Q}{\mathrm{d} t} = -i \omega Q_0 e^{i(\omega t + \delta)}
+\end{equation}\]</span></p>
+<p>where the minus sign is because we have defined the current to be
+discharging the capacitor.</p>
+<p>The amplitude of the current oscillations is <span class="math inline">\(I_0 = \omega Q_0\)</span>. Using
+the fact that <span class="math inline">\(-i = e^{ -\frac{i\pi}{2} }\)</span> we can rewrite the
+expression for <span class="math inline">\(I\)</span> in terms of a product of <span class="math inline">\(e^{i\omega t}\)</span> (which is
+in phase with the applied voltage) and <span class="math inline">\(e^{i\delta^{&#39;}}\)</span> (where
+<span class="math inline">\(\delta^{&#39;}\)</span> is the phase difference between the voltage and the
+current).</p>
+<p><span class="math display" id="eq:currentPhase">\[\begin{equation}
+\tag{4.15}
+I = I_0 e^{- \frac{i\pi}{2} } e^{i\omega t} e^{i\delta} = I_0 e^{i\omega t} e^{i \left( \delta - \frac{\pi}{2} \right) } = I_0 e^{i\omega t} e^{i \delta^{&#39;}} \\
+\delta^{&#39;} = \delta - \frac{\pi}{2} \therefore \tan⁡\delta^{&#39;} = -\frac{1}{\tan\delta} = \frac{ \frac{1}{\omega C} - \omega L }{R}
+\end{equation}\]</span></p>
+<p>In circuits with reactive components the current is out of phase with
+the applied voltage. We can define a complex impedance <span class="math inline">\(Z\)</span> which
+includes the magnitude and phase information. This complex impedance can
+be used in a complex version of Ohm’s Law, <span class="math inline">\(V = \frac{I}{Z}\)</span>. The
+overall impedance of a circuit can be calculated by using the
+expressions for adding resistor in series and parallel but replacing the
+resistances with the complex impedances.</p>
+<p>If we represent the voltage by the real part of <span class="math inline">\(V = V_0 e^{i\omega t}\)</span>
+using Ohm’s Law <span class="math inline">\(V = IR\)</span> gives</p>
+<p><span class="math display" id="eq:IvsT">\[\begin{equation}
+\tag{4.16}
+I = \frac{V}{R} = \frac{ V_0 e^{i\omega t} }{R} = I_0 e^{i\omega t}
+\end{equation}\]</span></p>
+<p>As the current is in phase with <span class="math inline">\(V\)</span>,</p>
+<p><span class="math display" id="eq:impedanceVI">\[\begin{equation}
+\tag{4.17}
+Z_R = \frac{V_0 e^{i\omega t} }{ I_0 e^{i\omega t}} = R
+\end{equation}\]</span></p>
+<p>For a capacitor
+<span class="math display" id="eq:foraCapacitor">\[\begin{equation}
+\tag{4.18}
+V = \frac{Q}{C} \therefore I = \frac{\mathrm{d} Q}{\mathrm{d} t} = C \frac{\mathrm{d} V}{\mathrm{d} t} = C V_0 i \omega e^{i\omega t}
+\end{equation}\]</span></p>
+<p>Defining impedance as voltage divided by current:
+<span class="math display" id="eq:ZVI">\[\begin{equation}
+\tag{4.19}
+Z_C = \frac{V}{I} = \frac{V_0 e^{i\omega t} }{C V_0 e^{i\omega t}} = \frac{1}{i\omega C}
+\end{equation}\]</span></p>
+<p>A similar argument leads to <span class="math inline">\(Z_L = i\omega L\)</span>.</p>
+</div>
+<div id="combining-complex-impedances" class="section level2 hasAnchor" number="4.7">
+<h2><span class="header-section-number">4.7</span> Combining complex impedances<a href="magnetic-fields-and-the-lorentz-force.html#combining-complex-impedances" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<!-- ::: figurehere -->
+<!-- ::: center -->
+<!-- ![image](Figures/LCR_circuit.png){width="100mm"} -->
+<!-- ::: -->
+<!-- ::: -->
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:LCRcircuit"></span>
+<img src="Figures/LCR_circuit.png" alt="An LCR circuit." width="70%" />
+<p class="caption">
+Figure 4.3: An LCR circuit.
+</p>
+</div>
+<p>Impedances can be combined using the addition rules for resistors.<br />
+Series:
+<span class="math display" id="eq:ImpedanceSeries">\[\begin{equation}
+\tag{4.20}
+Z = Z_1 + Z_2 + Z_3 + ...
+\end{equation}\]</span></p>
+<p>Parallel:
+<span class="math display" id="eq:ImpParallel">\[\begin{equation}
+\tag{4.21}
+\frac{1}{Z} = \frac{1}{Z_1} + \frac{1}{Z_2} + \frac{1}{Z_3} + ...
+\end{equation}\]</span></p>
+<p>For example, for the series circuit shown in , since all the impedances
+are in series we just sum them to get the overall impedance:
+<span class="math display" id="eq:ImpOverall">\[\begin{equation}
+\tag{4.22}
+Z_{tot} = R + Z_C + Z_L = R + \frac{1}{i\omega C} + i\omega L
+\end{equation}\]</span></p>
+<p>To get the phase of the current with respect to the voltage, we write
+the impedance for the circuit in in the form <span class="math inline">\(|Z| e^{i\phi}\)</span>.</p>
+<p>We can rewrite <span class="math inline">\(Z_{tot}\)</span> as a real and imaginary term:</p>
+<p><span class="math display" id="eq:ZReal-Im">\[\begin{equation}
+\tag{4.23}
+Z_{tot} = R + i\left( - \frac{1}{\omega C} + \omega L \right)
+\end{equation}\]</span></p>
+<p>The magnitude of the impedance is therefore
+<span class="math display" id="eq:Zmag">\[\begin{equation}
+\tag{4.24}
+\sqrt{ \Re(Z)^2 + \Im(Z)^2 } = \sqrt{ R^2 + \left( \omega L - \frac{1}{\omega C} \right)^2 }
+\end{equation}\]</span></p>
+<p>and the phase is
+<span class="math inline">\(\phi = \tan^{-1}⁡ \frac{\Im(Z)}{ \Re(Z)}= \tan^{-1}⁡\left( \frac{ \omega L - \frac{1}{\omega C} }{R} \right)\)</span></p>
+<p>So the complex expression for the impedance is
+<span class="math display" id="eq:complexImpedance">\[\begin{equation}
+\tag{4.25}
+Z = \sqrt{ R^2 + \left(\omega L - \frac{1}{\omega C} \right)^2 } \exp⁡ \left( i \tan^{-1}⁡ \left( \frac{\omega L - \frac{1}{\omega C} }{R} \right)\right)
+\end{equation}\]</span></p>
+<p>We can represent the impedance on an Argand diagram as shown below.</p>
+<!-- ::: figurehere -->
+<!-- ::: center -->
+<!-- ![image](Figures/Z_argand.png){width="100mm"} -->
+<!-- ::: -->
+<!-- ::: -->
+<p><img src="Figures/Z_argand.png" width="70%" style="display: block; margin: auto;" /></p>
+<div id="phase-of-current-at-resonance" class="section level3 unnumbered hasAnchor">
+<h3>Phase of current at resonance<a href="magnetic-fields-and-the-lorentz-force.html#phase-of-current-at-resonance" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The LC circuit has a natural frequency of
+<span class="math inline">\(\omega_0 = \frac{1}{\sqrt{LC}}\)</span>. If a driving voltage is applied at
+this frequency then there is electrical resonance and at this frequency
+the maximum power is transferred into the circuit.</p>
+</div>
+</div>
+<div id="energy-in-lcr-circuits" class="section level2 hasAnchor" number="4.8">
+<h2><span class="header-section-number">4.8</span> Energy in LCR circuits<a href="magnetic-fields-and-the-lorentz-force.html#energy-in-lcr-circuits" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Rewriting the equation for the LCR circuit gives
+<span class="math display" id="eq:LCRrewrite">\[\begin{equation}
+\tag{4.26}
+V_0 e^{i\omega t} = L \frac{\mathrm{d} I}{\mathrm{d} t} + RI + \frac{Q}{C}
+\end{equation}\]</span></p>
+<p>The power supplied to the circuit is <span class="math inline">\(IV\)</span>. If the whole equation is
+multiplied by <span class="math inline">\(I\)</span>,
+<span class="math display" id="eq:multiplyByI">\[\begin{equation}
+\tag{4.27}
+I V_0 e^{i\omega t} = IL \frac{\mathrm{d} I}{\mathrm{d} t} + RI^2 + \frac{IQ}{C}
+\end{equation}\]</span></p>
+<p>The term on the left-hand side is the power supplied to the circuit. The
+other terms must also be an energy rate. The middle term on the
+right-hand side should be familiar and is the rate at which power is
+dissipated in the resistor. The other two terms describe the rate at
+which power is stored or released from the inductor and the capacitor.</p>
+<div id="energy-stored-in-an-inductor" class="section level3 hasAnchor" number="4.8.1">
+<h3><span class="header-section-number">4.8.1</span> Energy stored in an inductor<a href="magnetic-fields-and-the-lorentz-force.html#energy-stored-in-an-inductor" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><span class="math inline">\(IL \frac{\mathrm{d} I}{\mathrm{d} t}\)</span> is the rate at which energy is stored in the
+magnetic field. The energy stored in the field at any point, <span class="math inline">\(U_B\)</span>, can
+be found by integrating.
+<span class="math display" id="eq:dU-dT">\[\begin{equation}
+\tag{4.28}
+\frac{\mathrm{d} U_B}{\mathrm{d} t} = IL \frac{\mathrm{d} I}{\mathrm{d} t} \therefore U_B = \frac{I^2 L}{2}
+\end{equation}\]</span></p>
+</div>
+<div id="energy-stored-in-a-capacitor" class="section level3 hasAnchor" number="4.8.2">
+<h3><span class="header-section-number">4.8.2</span> Energy stored in a capacitor<a href="magnetic-fields-and-the-lorentz-force.html#energy-stored-in-a-capacitor" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><span class="math inline">\(\frac{IQ}{C}\)</span> is the rate at which energy is stored in the electric
+field. The energy stored, <span class="math inline">\(U_C\)</span>, can be found by integrating.
+<span class="math display" id="eq:energyCap">\[\begin{equation}
+\tag{4.29}
+\frac{\mathrm{d} U_C}{\mathrm{d} t} = \frac{\mathrm{d} Q}{\mathrm{d} t} \frac{Q}{C} \therefore U_C = \frac{Q^2}{2C} = \frac{CV^2}{2}
+\end{equation}\]</span></p>
+</div>
+</div>
+<div id="summary-1" class="section level2 hasAnchor" number="4.9">
+<h2><span class="header-section-number">4.9</span> Summary<a href="magnetic-fields-and-the-lorentz-force.html#summary-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="tablehere">
+<div class="center">
+<p><span id="tab:summary" label="tab:summary"></span></p>
+<table>
+<tbody>
+<tr class="odd">
+<td align="left">Capacitors</td>
+<td align="center"><span class="math inline">\(V_C = \frac{Q}{C}\)</span></td>
+<td align="left">Inductors</td>
+<td align="right"><span class="math inline">\(V_L = -L \frac{\mathrm{d} I}{\mathrm{d} t}\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="center"><span class="math inline">\(U_C = \frac{1}{2} \frac{Q^2}{C}\)</span></td>
+<td align="left"></td>
+<td align="right"><span class="math inline">\(U_L = \frac{1}{2} LI^2\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Complex impedance</td>
+<td align="center"><span class="math inline">\(Z_C = \frac{1}{i \omega C}\)</span></td>
+<td align="left">Kirchoff’s Laws</td>
+<td align="right"><span class="math inline">\(\sum_i \epsilon_i = 0\)</span> around a loop</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="center"><span class="math inline">\(Z_L = i \omega L\)</span></td>
+<td align="left"></td>
+<td align="right"><span class="math inline">\(\sum_i I_i = 0\)</span> at a junction</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="work-and-energy-in-electrostatics.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="magnetic-field-of-currents.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/index.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
